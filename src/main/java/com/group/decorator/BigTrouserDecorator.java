@@ -16,7 +16,7 @@ public class BigTrouserDecorator extends FineryDecorator {
 
     @Override
     public void show() {
-        System.out.println("装扮垮裤.....");
         super.show();
+        System.out.println("装扮垮裤.....");
     }
 }

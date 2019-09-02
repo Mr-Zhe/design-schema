@@ -17,7 +17,7 @@ public class TShirtsDecorator extends FineryDecorator {
 
     @Override
     public void show() {
-        System.out.println("装扮TShirts.....");
         super.show();
+        System.out.println("装扮TShirts.....");
     }
 }

@@ -16,7 +16,7 @@ public class SneakersDecorator extends FineryDecorator {
 
     @Override
     public void show() {
-        System.out.println("装扮球鞋....");
         super.show();
+        System.out.println("装扮球鞋....");
     }
 }
