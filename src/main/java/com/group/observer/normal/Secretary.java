@@ -1,4 +1,4 @@
-package com.group.observer;
+package com.group.observer.normal;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,9 +9,8 @@ import java.util.List;
  * @date ：Created in 2019/9/4 15:11
  * @version: 1.1.0
  */
-public class Boss implements Subject {
+public class Secretary implements Subject {
     private String actionState;
-
     private List<Observer> observers = new ArrayList<>(16);
 
     @Override

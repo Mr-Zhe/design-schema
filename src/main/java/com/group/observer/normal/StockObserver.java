@@ -1,4 +1,4 @@
-package com.group.observer;
+package com.group.observer.normal;
 
 /**
  * @author ：ZHANGZHE
