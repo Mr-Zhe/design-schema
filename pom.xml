@@ -10,9 +10,13 @@
 
   <name>design-schema</name>
   <url>http://www.example.com</url>
-
+  
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+    <lombok.version>1.18.2</lombok.version>
+    <springfox.version>2.8.0</springfox.version>
+    <spring.auth.demo.version>1.1.0-SNAPSHOT</spring.auth.demo.version>
   </properties>
 
   <dependencies>
@@ -23,5 +27,33 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>${releases.id}</id>
+      <name>${releases.name}</name>
+      <url>${releases.url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>${snapshots.id}</id>
+      <name>${snapshots.name}</name>
+      <url>${snapshots.url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.1</version>
+        <configuration>
+          <source>${java.version}</source>
+          <target>${java.version}</target>
+          <encoding>${project.build.sourceEncoding}</encoding>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
